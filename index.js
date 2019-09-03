@@ -1,9 +1,7 @@
-var x = 1
+var x = 0
 function takeANumber(line){
-  line.push(x)
-  var n = x
-  ++x
-  return (`Welcome, you are number ${n}.`)
+  line.push(++x)
+  return (`Welcome, you are number ${x}.`)
 }
 
 function nowServing(line){
@@ -19,7 +17,7 @@ function nowServing(line){
 function currentLine(line){
   var newLine = []
   var x = 1
-  for (var i = 0; i < line.length; ++i) {
+  for (var i = 0; i < line.length; i++) {
     newLine.push(` ${x}. ${line[i]}`)
 	  ++x
   }
