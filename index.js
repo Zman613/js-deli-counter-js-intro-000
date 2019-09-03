@@ -1,8 +1,9 @@
 var x = 1
 function takeANumber(line){
   line.push(x)
+  var n = x
   ++x
-  return (`Welcome, you are number ${line.length}.`)
+  return (`Welcome, you are number ${n}.`)
 }
 
 function nowServing(line){
