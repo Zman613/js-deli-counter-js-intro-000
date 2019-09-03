@@ -1,5 +1,5 @@
 function takeANumber(line){
-  line.push(line.length)
+  line.push(line.length + 1)
   return (`Welcome, you are number ${line.length}.`)
 }
 
